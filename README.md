@@ -7,7 +7,7 @@
 <h1>Aplikasi CRM Dio Surya Putra</h1>
 
 
-## About Laravel
+## About
 
 Aplikasi Customer Relationship Management (CRM) ini dirancang untuk membantu divisi sales PT. Smart dalam mengelola leads, proyek, pelanggan, produk, dan langganan. Aplikasi ini dibangun menggunakan Laravel dan mencakup berbagai fitur kunci untuk mempermudah operasi penjualan.
 
