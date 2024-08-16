@@ -1,66 +1,120 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- <p align="center">
+<a href="https://laravel.com" target="_blank">
+<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+</a>
+</p> -->
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h1>Aplikasi CRM Dio Surya Putra</h1>
+
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi Customer Relationship Management (CRM) ini dirancang untuk membantu divisi sales PT. Smart dalam mengelola leads, proyek, pelanggan, produk, dan langganan. Aplikasi ini dibangun menggunakan Laravel dan mencakup berbagai fitur kunci untuk mempermudah operasi penjualan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Fitur
 
-## Learning Laravel
+1. Halaman Login
+Tujuan: Menyediakan autentikasi bagi pengguna untuk mengakses aplikasi.
+Detail: Pengguna dapat login dengan kredensial mereka. Peran pengguna menentukan level akses dalam aplikasi.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. Manajemen Leads
+Tujuan: Mengelola dan melihat calon pelanggan (leads).
+Detail: Menampilkan daftar semua leads, melihat detail lead, dan melacak statusnya.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+3. Master Produk (Layanan Internet)
+Tujuan: Mengelola daftar produk (layanan internet) yang ditawarkan oleh PT. Smart.
+Detail: Menambah, memperbarui, dan menghapus produk. Melihat detail produk dan mengelola tawaran layanan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4. Manajemen Proyek
+Tujuan: Memproses leads dan mengelola proyek dengan persetujuan dari manajer.
+Detail: Membuat proyek baru berdasarkan leads, menetapkan manajer, dan melacak status proyek. Proyek memerlukan persetujuan manajer sebelum dapat dilanjutkan. Manajer dapat melihat dan menyetujui atau menolak proyek.
 
-## Laravel Sponsors
+5. Manajemen Pelanggan
+Tujuan: Mengelola pelanggan yang memiliki langganan aktif.
+Detail: Menampilkan daftar pelanggan yang telah berlangganan, melihat detail langganan mereka, dan melacak layanan yang mereka gunakan.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+## Skema Basis Data
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Aplikasi ini menggunakan tabel basis data berikut:
 
-## Contributing
+1. users
+id: Kunci Primer
+name: Nama pengguna
+email: Email pengguna
+password: Password pengguna
+role: ENUM('admin', 'manager', 'staff') - Peran pengguna
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. leads
+id: Kunci Primer
+name: Nama lead
+contact_info: Informasi kontak lead
+status: Status lead (misalnya, baru, dihubungi, dikonversi)
 
-## Code of Conduct
+3. products
+id: Kunci Primer
+name: Nama produk
+description: Deskripsi produk
+price: Harga produk
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. projects
+id: Kunci Primer
+lead_id: Kunci Asing (mengacu ke leads.id)
+manager_id: Kunci Asing (mengacu ke users.id)
+status: Status proyek (misalnya, pending, approved, rejected)
+created_by: ID pengguna yang membuat proyek
+start_date: Tanggal mulai proyek
+end_date: Tanggal akhir proyek
 
-## Security Vulnerabilities
+5. customers
+id: Kunci Primer
+name: Nama pelanggan
+contact_info: Informasi kontak pelanggan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. subscriptions
+id: Kunci Primer
+customer_id: Kunci Asing (mengacu ke customers.id)
+product_id: Kunci Asing (mengacu ke products.id)
+start_date: Tanggal mulai langganan
+end_date: Tanggal akhir langganan
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Instalasi dan Setup
+
+1. Clone Repository
+ - git clone <repository-url>
+
+2. Navigasi ke Direktori Proyek
+ - cd project-directory
+
+3. Instalasi Dependencies
+ - composer install
+ - npm install
+
+4. Siapkan File Lingkungan
+ - cp .env.example .env
+
+5. Generate Application Key
+ - php artisan key:generate
+
+6. Jalankan Migrasi
+ - php artisan migrate
+
+7. Jalankan Aplikasi
+ - php artisan serve
+
+
+### Penggunaan
+
+- Login: Akses halaman login dan masukkan kredensial Anda untuk login.
+- Manajemen Leads: Akses halaman leads untuk melihat dan mengelola calon pelanggan.
+- Manajemen Produk: Akses halaman master produk untuk mengelola layanan internet.
+- Buat Proyek: Buat dan kelola proyek berdasarkan leads. Manajer akan meninjau dan menyetujui/menolak proyek.
+- Lihat Pelanggan: Akses halaman pelanggan untuk melihat pelanggan yang telah berlangganan dan layanan yang mereka gunakan.
+
+## DRD
+
+<p align="center">
+<img src="ERD.png" alt="Picture">
+</p>
