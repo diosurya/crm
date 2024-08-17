@@ -13,13 +13,13 @@ Aplikasi Customer Relationship Management (CRM) ini dirancang untuk membantu div
 
 ## User Role
 
-<h4>1. Admin/SuperAdmin</h4>
+<h3>1. Admin/SuperAdmin</h3>
 <ul>
     <li><strong>Akses Penuh:</strong> Admin atau SuperAdmin memiliki hak akses penuh terhadap semua menu dan halaman dalam aplikasi.</li>
     <li><strong>Manajemen Data:</strong> Admin dapat menampilkan, mengelola, dan memodifikasi seluruh data yang ada di dalam sistem, tanpa batasan, termasuk mengelola seluruh data <strong>Users</strong>.</li>
 </ul>
 
-<h4>2. Manager</h4>
+<h3>2. Manager</h3>
 <ul>
     <li><strong>Akses Terbatas pada Proyek:</strong> Manager hanya dapat menampilkan data proyek yang terelasi atau ditugaskan kepada mereka melalui login masing-masing.</li>
     <li><strong>Persetujuan Proyek:</strong> Manager memiliki wewenang untuk melakukan persetujuan (approve) atau penolakan (reject) terhadap proyek yang berada dalam tanggung jawab mereka.</li>
@@ -28,7 +28,7 @@ Aplikasi Customer Relationship Management (CRM) ini dirancang untuk membantu div
     <li><strong>Akses Menu Leads:</strong> Manager juga memiliki akses untuk melihat dan mengelola data calon pelanggan (leads).</li>
 </ul>
 
-<h4>3. Staff/Marketing/Admin Marketing dan Lainnya</h4>
+<h3>3. Staff/Marketing/Admin Marketing dan Lainnya</h3>
 <ul>
     <li><strong>Akses Produk:</strong> Staff memiliki akses untuk melihat data produk yang tersedia.</li>
     <li><strong>Manajemen Leads:</strong> Staff dapat menambah dan mengedit data calon pelanggan (leads).</li>
