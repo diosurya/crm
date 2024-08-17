@@ -11,6 +11,30 @@
 
 Aplikasi Customer Relationship Management (CRM) ini dirancang untuk membantu divisi sales PT. Smart dalam mengelola leads, proyek, pelanggan, produk, dan langganan. Aplikasi ini dibangun menggunakan Laravel dan mencakup berbagai fitur kunci untuk mempermudah operasi penjualan.
 
+## User Role
+
+<h3>1. Admin/SuperAdmin</h3>
+<ul>
+    <li><strong>Akses Penuh:</strong> Admin atau SuperAdmin memiliki hak akses penuh terhadap semua menu dan halaman dalam aplikasi.</li>
+    <li><strong>Manajemen Data:</strong> Admin dapat menampilkan, mengelola, dan memodifikasi seluruh data yang ada di dalam sistem, tanpa batasan.</li>
+</ul>
+
+<h3>2. Manager</h3>
+<ul>
+    <li><strong>Akses Terbatas pada Proyek:</strong> Manager hanya dapat menampilkan data proyek yang terelasi atau ditugaskan kepada mereka melalui login masing-masing.</li>
+    <li><strong>Persetujuan Proyek:</strong> Manager memiliki wewenang untuk melakukan persetujuan (approve) atau penolakan (reject) terhadap proyek yang berada dalam tanggung jawab mereka.</li>
+    <li><strong>Manajemen Produk:</strong> Manager dapat menambah, mengedit, dan menghapus produk yang ditawarkan.</li>
+    <li><strong>Manajemen Langganan:</strong> Manager dapat membuat, mengedit, dan menghapus data langganan (subscriptions).</li>
+    <li><strong>Akses Menu Leads:</strong> Manager juga memiliki akses untuk melihat dan mengelola data calon pelanggan (leads).</li>
+</ul>
+
+<h3>3. Staff/Marketing/Admin Marketing dan Lainnya</h3>
+<ul>
+    <li><strong>Akses Produk:</strong> Staff memiliki akses untuk melihat data produk yang tersedia.</li>
+    <li><strong>Manajemen Leads:</strong> Staff dapat menambah dan mengedit data calon pelanggan (leads).</li>
+    <li><strong>Pembuatan Proyek:</strong> Staff juga memiliki kemampuan untuk membuat proyek baru berdasarkan leads yang dikelola.</li>
+</ul>
+
 
 ## Fitur
 
