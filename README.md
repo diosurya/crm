@@ -157,7 +157,7 @@ Aplikasi ini menggunakan tabel basis data berikut:
 </ol>
 
 
-## DRD
+## ERD
 
 <p align="center">
 <img src="ERD.png" alt="Picture">
