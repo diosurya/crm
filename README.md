@@ -106,27 +106,45 @@ end_date: Tanggal akhir langganan
 
 ## Instalasi dan Setup
 
-1. Clone Repository
- - git clone <repository-url>
+<ol>
+    <li>Clone Repository
+        <ul>
+            <li><code>git clone &lt;repository-url&gt;</code></li>
+        </ul>
+    </li>
+    <li>Navigasi ke Direktori Proyek
+        <ul>
+            <li><code>cd project-directory</code></li>
+        </ul>
+    </li>
+    <li>Instalasi Dependencies
+        <ul>
+            <li><code>composer install</code></li>
+            <li><code>npm install</code></li>
+        </ul>
+    </li>
+    <li>Siapkan File Lingkungan
+        <ul>
+            <li><code>cp .env.example .env</code></li>
+        </ul>
+    </li>
+    <li>Generate Application Key
+        <ul>
+            <li><code>php artisan key:generate</code></li>
+        </ul>
+    </li>
+    <li>Jalankan Migrasi
+        <ul>
+            <li><code>php artisan migrate</code></li>
+        </ul>
+    </li>
+    <li>Jalankan Aplikasi
+        <ul>
+            <li><code>php artisan serve</code></li>
+        </ul>
+    </li>
+</ol>
 
-2. Navigasi ke Direktori Proyek
- - cd project-directory
-
-3. Instalasi Dependencies
- - composer install
- - npm install
-
-4. Siapkan File Lingkungan
- - cp .env.example .env
-
-5. Generate Application Key
- - php artisan key:generate
-
-6. Jalankan Migrasi
- - php artisan migrate
-
-7. Jalankan Aplikasi
- - php artisan serve
 
 
 ### Penggunaan
