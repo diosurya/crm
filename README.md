@@ -137,7 +137,7 @@ end_date: Tanggal akhir langganan
 - Manajemen Produk: Akses halaman master produk untuk mengelola layanan internet.
 - Buat Proyek: Buat dan kelola proyek berdasarkan leads. Manajer akan meninjau dan menyetujui/menolak proyek.
 - Subscriptions: Halaman Subscriptions dirancang untuk mengelola data langganan pelanggan yang dihasilkan dari proyek yang telah disetujui.
-- Lihat Pelanggan: Akses halaman pelanggan untuk melihat pelanggan yang telah berlangganan dan layanan yang mereka gunakan.
+- Customers: Akses halaman pelanggan untuk melihat pelanggan yang telah berlangganan dan layanan yang mereka gunakan.
 
 ## DRD
 
