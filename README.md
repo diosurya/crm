@@ -64,44 +64,44 @@ Detail: Menampilkan daftar pelanggan yang telah berlangganan, melihat detail lan
 Aplikasi ini menggunakan tabel basis data berikut:
 
 1. users
-id: Kunci Primer
-name: Nama pengguna
-email: Email pengguna
-password: Password pengguna
-role: ENUM('admin', 'manager', 'staff') - Peran pengguna
+ - id: Kunci Primer
+ - name: Nama pengguna
+ - email: Email pengguna
+ - password: Password pengguna
+ - role: ENUM('admin', 'manager', 'staff') - Peran pengguna
 
 2. leads
-id: Kunci Primer
-name: Nama lead
-contact_info: Informasi kontak lead
-status: Status lead (misalnya, baru, dihubungi, dikonversi)
+ - id: Kunci Primer
+ - name: Nama lead
+ - contact_info: Informasi kontak lead
+ - status: Status lead (misalnya, baru, dihubungi, dikonversi)
 
 3. products
-id: Kunci Primer
-name: Nama produk
-description: Deskripsi produk
-price: Harga produk
+ - id: Kunci Primer
+ - name: Nama produk
+ - description: Deskripsi produk
+ - price: Harga produk
 
 4. projects
-id: Kunci Primer
-lead_id: Kunci Asing (mengacu ke leads.id)
-manager_id: Kunci Asing (mengacu ke users.id)
-status: Status proyek (misalnya, pending, approved, rejected)
-created_by: ID pengguna yang membuat proyek
-start_date: Tanggal mulai proyek
-end_date: Tanggal akhir proyek
+ - id: Kunci Primer
+ - lead_id: Kunci Asing (mengacu ke leads.id)
+ - manager_id: Kunci Asing (mengacu ke users.id)
+ - status: Status proyek (misalnya, pending, approved, rejected)
+ - created_by: ID pengguna yang membuat proyek
+ - start_date: Tanggal mulai proyek
+ - end_date: Tanggal akhir proyek
 
 5. customers
-id: Kunci Primer
-name: Nama pelanggan
-contact_info: Informasi kontak pelanggan
+ - id: Kunci Primer
+ - name: Nama pelanggan
+ - contact_info: Informasi kontak pelanggan
 
 6. subscriptions
-id: Kunci Primer
-customer_id: Kunci Asing (mengacu ke customers.id)
-product_id: Kunci Asing (mengacu ke products.id)
-start_date: Tanggal mulai langganan
-end_date: Tanggal akhir langganan
+ - id: Kunci Primer
+ - customer_id: Kunci Asing (mengacu ke customers.id)
+ - product_id: Kunci Asing (mengacu ke products.id)
+ - start_date: Tanggal mulai langganan
+ - end_date: Tanggal akhir langganan
 
 
 ## Instalasi dan Setup
