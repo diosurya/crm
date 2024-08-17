@@ -16,7 +16,7 @@ Aplikasi Customer Relationship Management (CRM) ini dirancang untuk membantu div
 <h3>1. Admin/SuperAdmin</h3>
 <ul>
     <li><strong>Akses Penuh:</strong> Admin atau SuperAdmin memiliki hak akses penuh terhadap semua menu dan halaman dalam aplikasi.</li>
-    <li><strong>Manajemen Data:</strong> Admin dapat menampilkan, mengelola, dan memodifikasi seluruh data yang ada di dalam sistem, tanpa batasan, termasuk mengelola data <strong>users</string>.</li>
+    <li><strong>Manajemen Data:</strong> Admin dapat menampilkan, mengelola, dan memodifikasi seluruh data yang ada di dalam sistem, tanpa batasan, termasuk mengelola seluruh data <strong>Users</string>.</li>
 </ul>
 
 <h3>2. Manager</h3>
