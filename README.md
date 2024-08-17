@@ -131,7 +131,7 @@ end_date: Tanggal akhir langganan
 
 ### Penggunaan
 
-- Registrasi : Jika belum ada data user yang tersedia. data registrasi yang ditambahkan akan default role staff.
+- <b>Registrasi</b> : Jika belum ada data user yang tersedia. data registrasi yang ditambahkan akan default role staff.
 - Login: Akses halaman login dan masukkan kredensial Anda untuk login.
 - Manajemen Leads: Akses halaman leads untuk melihat dan mengelola calon pelanggan.
 - Manajemen Produk: Akses halaman master produk untuk mengelola layanan internet.
