@@ -132,12 +132,12 @@ end_date: Tanggal akhir langganan
 ### Penggunaan
 
 - <b>Registrasi</b> : Jika belum ada data user yang tersedia. data registrasi yang ditambahkan akan default role staff.
-- Login: Akses halaman login dan masukkan kredensial Anda untuk login.
-- Manajemen Leads: Akses halaman leads untuk melihat dan mengelola calon pelanggan.
-- Manajemen Produk: Akses halaman master produk untuk mengelola layanan internet.
-- Buat Proyek: Buat dan kelola proyek berdasarkan leads. Manajer akan meninjau dan menyetujui/menolak proyek.
-- Subscriptions: Halaman Subscriptions dirancang untuk mengelola data langganan pelanggan yang dihasilkan dari proyek yang telah disetujui.
-- Customers: Akses halaman pelanggan untuk melihat pelanggan yang telah berlangganan dan layanan yang mereka gunakan.
+- <b>Login</b>: Akses halaman login dan masukkan kredensial Anda untuk login.
+- <b>Manajemen Leads</b>: Akses halaman leads untuk melihat dan mengelola calon pelanggan.
+- <b>Manajemen Produk</b>: Akses halaman master produk untuk mengelola layanan internet.
+- <b>Manajemen Proyek</b>: Buat dan kelola proyek berdasarkan leads. Manajer akan meninjau dan menyetujui/menolak proyek.
+- <b>Subscriptions</b>: Halaman Subscriptions dirancang untuk mengelola data langganan pelanggan yang dihasilkan dari proyek yang telah disetujui.
+- <b>Customers</b>: Akses halaman pelanggan untuk melihat pelanggan yang telah berlangganan dan layanan yang mereka gunakan.
 
 ## DRD
 
