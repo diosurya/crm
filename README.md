@@ -70,6 +70,12 @@ Detail: Menampilkan daftar pelanggan yang telah berlangganan, melihat detail lan
 - <b>Customers</b>: Akses halaman pelanggan untuk melihat pelanggan yang telah berlangganan dan layanan yang mereka gunakan.
 
 
+## ERD
+
+<p align="center">
+<img src="ERD.png" alt="Picture">
+</p>
+
 ## Skema Basis Data
 
 Aplikasi ini menggunakan tabel basis data berikut:
@@ -115,7 +121,7 @@ Aplikasi ini menggunakan tabel basis data berikut:
  - end_date: Tanggal akhir langganan
 
 
-## Instalasi dan Setup
+ ## Instalasi dan Setup
 
 <ol>
     <li>Clone Repository
@@ -156,9 +162,3 @@ Aplikasi ini menggunakan tabel basis data berikut:
     </li>
 </ol>
 
-
-## ERD
-
-<p align="center">
-<img src="ERD.png" alt="Picture">
-</p>
